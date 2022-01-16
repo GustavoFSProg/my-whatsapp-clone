@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import Avatar from '../src/assets/avatar.png'
 import Donut from '@material-ui/icons/DonutLarge'
@@ -8,7 +8,7 @@ import Search from '@material-ui/icons/Search'
 import ChatListItem from './components/ChatListItem'
 
 function App() {
-  const [cahtList, setChatList] = useState([{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}])
+  const [cahtList] = useState([{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}])
 
   return (
     <div className="app-window">
