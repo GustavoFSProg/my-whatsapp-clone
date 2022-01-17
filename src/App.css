@@ -22,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   border-right: 1px solid #ddd;
+  height: auto;
 }
 /* 
 .contentarea {
@@ -86,22 +87,32 @@ input {
 .chatlist {
   margin-top: 8px;
   overflow-y: auto;
-  height: 600px;
   flex: 1;
   background: white;
+  height: auto;
 }
 
 .chatlist::-webkit-scrollbar {
   width: 6px;
-  height: 6px;
 }
+
 .chatlist::-webkit-scrollbar-track {
-  /* background: black; */
+  height: 3px;
 }
 
 .chatlist::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.2);
+  height: 2px;
 }
 .chatlist ::-webkit-scrollbar-thumb:hover {
   background: #8c8c8c;
+}
+
+.contentarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 100%;
 }

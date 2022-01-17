@@ -6,6 +6,7 @@ import ChatIcon from '@material-ui/icons/Chat'
 import MoreVert from '@material-ui/icons/MoreVert'
 import Search from '@material-ui/icons/Search'
 import ChatListItem from './components/ChatListItem'
+import ChatIntro from './components/ChatIntro'
 
 function App() {
   const [cahtList] = useState([{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}])
@@ -49,7 +50,9 @@ function App() {
         </div>
       </div>
 
-      <div className="contentarea"></div>
+      <div className="contentarea">
+        <ChatIntro />
+      </div>
     </div>
   )
 }
