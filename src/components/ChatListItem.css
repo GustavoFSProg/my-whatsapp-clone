@@ -5,6 +5,9 @@
   height: 70px;
   margin-bottom: 4px;
 }
+.chatList-item :hover {
+  background: #f5f5f5;
+}
 
 .chatList-item-avatar {
   width: 50px;
@@ -21,6 +24,9 @@
   border-bottom: 1px solid #eee;
   padding-right: 15px;
   margin-left: 15px;
+
+  flex-wrap: wrap;
+  min-width: 0px;
 }
 
 .chatList-item-line {
@@ -45,4 +51,11 @@
   color: #999;
   display: flex;
   width: 100%;
+}
+
+.chatList-item-line-last-msg p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0;
 }

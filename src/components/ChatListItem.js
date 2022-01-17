@@ -8,10 +8,12 @@ function ChatListItem() {
       <div className="chatList-item-lines">
         <div className="chatList-item-line">
           <div className="chatList-item-name"> Boni</div>
-          <div className="chatList-item-date"> 21/12/2022</div>
+          <div className="chatList-item-date"> 19:35</div>
         </div>
         <div className="chatList-item-line">
-          <p className="chatList-item-line-last-msg">Opa! Tudo bem?</p>
+          <div className="chatList-item-line-last-msg">
+            <p> ERu vou ver como farei isso tudo de hojeOpa! Tudo bem?</p>
+          </div>
         </div>
       </div>
     </div>

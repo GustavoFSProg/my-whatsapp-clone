@@ -91,14 +91,16 @@ input {
   background: white;
 }
 
-.chatlist ::-webkit-scrollbar {
-  width: 14px;
+.chatlist::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
 }
-.chatlist ::-webkit-scrollbar-track {
-  background: black;
+.chatlist::-webkit-scrollbar-track {
+  /* background: black; */
 }
-.chatlist ::-webkit-scrollbar-thumb {
-  background: #4d4d4d;
+
+.chatlist::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
 }
 .chatlist ::-webkit-scrollbar-thumb:hover {
   background: #8c8c8c;
