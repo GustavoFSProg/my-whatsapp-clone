@@ -5,6 +5,11 @@
   height: 70px;
   margin-bottom: 4px;
 }
+
+.chatList-item.active {
+  background: #eeee;
+}
+
 .chatList-item :hover {
   background: #f2f2f2;
 }

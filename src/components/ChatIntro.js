@@ -1,7 +1,7 @@
 import Intro from '../assets/intro.jpg'
 import './ChatIntro.css'
 
-function ChatIntro() {
+function ChatIntro({ onClick }) {
   return (
     <div className="imagem">
       <img src={Intro} alt="intro" width="490" />
@@ -14,7 +14,10 @@ function ChatIntro() {
           height: '6px',
           borderRadius: '20px',
         }}
-      ></div>
+      >
+        {' '}
+        chat Intro
+      </div>
     </div>
   )
 }

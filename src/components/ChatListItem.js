@@ -1,9 +1,9 @@
 import Avatar from '../assets/avatar.png'
 import './ChatListItem.css'
 
-function ChatListItem() {
+function ChatListItem({ onClick, active }) {
   return (
-    <div className="chatList-item">
+    <div className={`chatList-item ${active ? 'active' : ''}`} onClick={onClick}>
       <img src={Avatar} alt="avatar" width="52" className="chatList-item-avatar" />
       <div className="chatList-item-lines">
         <div className="chatList-item-line">

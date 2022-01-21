@@ -7,10 +7,28 @@ import MoreVert from '@material-ui/icons/MoreVert'
 import Search from '@material-ui/icons/Search'
 import ChatListItem from './components/ChatListItem'
 import ChatIntro from './components/ChatIntro'
+import ChatWindow from './components/ChatWindow'
 
 function App() {
-  const [cahtList] = useState([{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}])
+  const [chatList, setChatList] = useState([
+    {
+      chatId: 1,
+      title: 'Geraldo Lula',
+      image: `${Avatar}`,
+    },
 
+    {
+      chatId: 2,
+      title: 'Ana Golfinho',
+      image: `${Avatar}`,
+    },
+    {
+      chatId: 3,
+      title: 'Fernando Golfinho',
+      image: `${Avatar}`,
+    },
+  ])
+  const [activeChat, setActiveChat] = useState([])
   return (
     <div className="app-window">
       <div className="sidebar">
@@ -40,18 +58,23 @@ function App() {
           </div>
         </div>
         <div className="chatlist">
-          {cahtList.map((item, key) => {
+          {chatList.map((item, key) => {
+            console.log(item)
             return (
-              <div key={key}>
-                <ChatListItem />
-              </div>
+              <ChatListItem
+                key={key}
+                active={activeChat.chatId === item.chatId}
+                onClick={() => setActiveChat(chatList[key])}
+              />
             )
           })}
         </div>
       </div>
 
       <div className="contentarea">
-        <ChatIntro />
+        {activeChat.chatId !== undefined && <ChatWindow chatId={activeChat.chatId} />}
+
+        {activeChat.chatId === undefined && <ChatIntro />}
       </div>
     </div>
   )
