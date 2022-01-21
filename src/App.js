@@ -10,7 +10,7 @@ import ChatIntro from './components/ChatIntro'
 import ChatWindow from './components/ChatWindow'
 
 function App() {
-  const [chatList, setChatList] = useState([
+  const [chatList] = useState([
     {
       chatId: 1,
       title: 'Geraldo Lula',
